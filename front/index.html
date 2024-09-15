@@ -1,4 +1,4 @@
-<html lang = "en">
+<html lang = "en"></html>
     <head></head>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
@@ -6,44 +6,107 @@
         <meta name="viewport" content="width=
         , initial-scale=1.0">
         <title>dirt.net</title>
+        <style>
+            .flex-container {
+              display: flex;
+              background-color: rgb(97, 98, 99);
+            }
+            
+            .flex-container > div {
+              background-color: #f1f1f1;
+              margin: 10px;
+              padding: 20px;
+              font-size: 30px;
+              overflow-x: auto;
+              display: flex;
+              overflow-y: hidden;
+            }
+            </style>
+
+        <script src = "main.js"></script>
     </head>
 
     <body>
-        <div class="main_screen" align = 'center'>
-            <h1 align="center" class="logo_1" style="color: white; font-size: 70px;">
+        <div class = "logo_2" align = "center" style="color: white; font-size: 50px;">
+            <h>
                 dirt.net
-            </h1>
+            </h>
         </div>
+
+        <section class = 'card' align = "center">
+            <div class="card--content" id = "urgent" onclick="">
+                <p>
+                    <b>
+                        Срочное
+                    </b>
+                </p>
+                <ul id = "urgentUL">
+                    <li class = "checked">Что-то</li>
+                    <li>Еще что-то</li>
+                </ul>
+            </div>
+            <div class="card--content" id = "projects" onclick="newProjects">
+                <p>
+                    <b>
+                        Проекты
+                    </b>
+                </p>
+                <ul id = "projectsUL"></ul>
+                    <li class = "checked">Что-то</li>
+                    <li>Еще что-то</li>
+                </ul>
+            </div>
+            <div class="card--content" id = "outsource" onclick="newOutsouce">
+                <p>
+                    <b>
+                        Делегировать
+                    </b>
+                </p>
+                <ul id = "outsourceUL"></ul>
+                    <li class = "checked">Что-то</li>
+                    <li>Еще что-то</li>
+                </ul>
+            </div>
+
+            </div>
+            <div class="card--content" id = "queue" onclick="newQueue">
+                <p>
+                    <b>
+                        По мере поступления
+                    </b>
+                </p>
+                <ul id = "queue"></ul>
+                    <li class = "checked">Что-то</li>
+                    <li>Еще что-то</li>
+                </ul>
+            </div>
+            <div class="card--content" id = "trash" onclick="newTrash">
+                <p>
+                    <b>
+                        Корзина
+                    </b>
+                </p>
+                <ul id = "trashUL"></ul>
+                    <li class = "checked">Что-то</li>
+                    <li>Еще что-то</li>
+                </ul>
+            </div>
+            <div class="card--content" id = "calendar" onclick="newCalendar">
+                <p>
+                    <b>
+                         Фиксируем дату в календаре
+                    </b>
+                </p>
+                <ul id = "calendarUL"></ul>
+                    <li class = "checked">Что-то</li>
+                    <li>Еще что-то</li>
+                </ul>
+            </div>
+
+
+        </section>
         
-            <input id = "login" class = "input"
-                placeholder="Ваш логин"
-                style="background-color:rgb(255, 255, 255);
-                border: solid 3px rgb(106, 54, 37);
-                height: 50px;
-                font-size: 35px;
-                vertical-align:15px;
-                color:rgb(114, 69, 60);
-                font-family: 'Times New Roman', Times, serif;
-                text-align: center;
-                border-radius: 12px;"/>
-            
-            <input id = "password" class = "input"
-                type = "password"
-                placeholder = "Ваш пароль"
-                style="background-color:rgb(255, 255, 255);
-                border: solid 3px rgb(106, 54, 37);
-                height: 50px;
-                font-size: 35px;
-                vertical-align:15px;
-                color:rgb(114, 69, 60);
-                font-family: 'Times New Roman', Times, serif;
-                text-align: center;
-                border-radius: 12px;"
-                />
-
-            <button href = "index.html" id = "log", class = "log" align = "center" style="font-family:Georgia, 'Times New Roman', Times, serif">
-                <a href="main/index.html" style="font-style: normal; color: black; text-decoration: none;">Войти</a>
-            </button>
-
+        <input type="text" id="MyInput" placeholder="Ваша задача" class="Add">
+        
     </body>
 </html>
