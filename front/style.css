@@ -1,0 +1,55 @@
+html {
+    background-color: black;
+}
+
+.inputs {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+  
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+  
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+
+.log {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+  
+    width: 150px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    font-size: 25px;
+    background-color: rgb(120, 104, 82);
+}
+
+#login {
+    position: fixed;
+    top: 46%;
+    left: 50%;
+  
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
+#password {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+  
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
